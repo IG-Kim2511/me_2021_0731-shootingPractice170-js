@@ -11,7 +11,7 @@
 
     function clickHandler(e) {
         if (e.target.classList.contains('poke')) {
-            stage.removeChild(e.target);
+            stage.removeChild(e.target);           
         }
     }
 
