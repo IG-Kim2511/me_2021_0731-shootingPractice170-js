@@ -1,8 +1,9 @@
+
 .stage {
     overflow: hidden;
     position: relative;
     width: 100vw;
-    height: 75vw;
+    height: 90vh;
     background: lightgreen;
 }
 
@@ -15,7 +16,7 @@
         transform: translateX(90vw);
     }
 }
-.ilbuni {
+.poke {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -26,28 +27,74 @@
       /* css 10. */
     animation: moving infinite alternate;
 }
-.ilbuni.a {
+.poke.a {
     left: 5%;
     bottom: 5%;
     background-image: url('../images/poke\ \(1\).png');
 
     animation-duration: 2s;  /* css 10. */
 }
-.ilbuni.b {
+.poke.b {
     left: 10%;
     bottom: 3%;
     background-image: url('../images/poke\ \(2\).png');
     animation-duration: 3s;
 }
-.ilbuni.c {
+.poke.c {
     left: 7%;
     bottom: 10%;
     background-image: url('../images/poke\ \(3\).png');
     animation-duration: 4s;
 }
-.ilbuni.d {
+.poke.d {
     left: 17%;
     bottom: 40%;
     /* background-image: url('../images/poke\ \(3\).png'); */
     animation-duration: 4s;
 }
+
+
+
+
+/*  */
+.container{
+    position: relative;
+}
+
+.btn-container{
+    background: lightgreen;
+}
+/* 🍀myButton  */
+.myButton {
+
+    /* position: fixed;
+    top: 100px;
+    left: 100px; */
+
+    z-index: 2;
+
+    box-shadow: inset 0px 39px 0px -24px #3b5998;
+    background-color:  #3b5998;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+  
+    font-size: 15px;
+    padding: 6px 15px;
+    text-decoration: none;
+
+    display: block;
+
+    margin: auto;
+   
+  }
+  .myButton:hover {
+    /* background-color:  #3b5998; */
+    opacity: 0.6;
+  }
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
