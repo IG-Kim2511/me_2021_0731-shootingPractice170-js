@@ -16,10 +16,19 @@
         <img class="ilbuni d" src="./images/poke (4).png" alt="">
     </div>
 
+    <button class="reset">reset</button>
+
     <script>
     (function() {
         
         const stage = document.querySelector('.stage');
+        
+        const resetBtn = document.querySelector('.reset');
+
+
+        // js 10. click and remove
+        
+        stage.addEventListener('click', clickHandler);
 
         function clickHandler(e) {
             if (e.target.classList.contains('ilbuni')) {
@@ -27,7 +36,21 @@
             }
         }
 
-        stage.addEventListener('click', clickHandler);
+        //js  20. reset
+
+        resetBtn.addEventListener("click",resetFun);
+
+        function resetFun() {
+            location.reload();
+ 
+            
+        }
+
+
+
+        
+        
+
     })();
     </script>
 </body>

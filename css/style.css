@@ -3,8 +3,10 @@
     position: relative;
     width: 100vw;
     height: 75vw;
-    background: #fff000;
+    background: lightgreen;
 }
+
+  /* css 10. */
 @keyframes moving {
     from {
         transform: translateX(0);
@@ -20,13 +22,16 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
+
+      /* css 10. */
     animation: moving infinite alternate;
 }
 .ilbuni.a {
     left: 5%;
     bottom: 5%;
     background-image: url('../images/poke\ \(1\).png');
-    animation-duration: 2s;
+
+    animation-duration: 2s;  /* css 10. */
 }
 .ilbuni.b {
     left: 10%;
