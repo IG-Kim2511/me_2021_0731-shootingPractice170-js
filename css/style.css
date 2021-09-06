@@ -1,10 +1,15 @@
+:root{
+    --maincolor: lightgrey;
+}
+
 
 .stage {
     overflow: hidden;
     position: relative;
     width: 100vw;
     height: 90vh;
-    background: lightgreen;
+    background: var(--maincolor);
+    
 }
 
   /* css 10. */
@@ -62,7 +67,13 @@
 }
 
 .btn-container{
-    background: lightgreen;
+    background: var(--maincolor);
+}
+
+.title{
+    background: var(--maincolor);
+
+    text-align: center;
 }
 /* 🍀myButton  */
 .myButton {
@@ -86,7 +97,6 @@
     text-decoration: none;
 
     display: block;
-
     margin: auto;
    
   }
