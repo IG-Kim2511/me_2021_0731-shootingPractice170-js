@@ -6,7 +6,8 @@
 
 
     // js 10. click and remove
-    
+    // 🦄classList.contains
+
     stage.addEventListener('click', clickHandler);
 
     function clickHandler(e) {

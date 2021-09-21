@@ -1,110 +1,110 @@
-:root{
-    --maincolor: lightgrey;
+:root {
+  --maincolor: lightgrey;
 }
-
 
 .stage {
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-    height: 90vh;
-    background: var(--maincolor);
+  background: var(--maincolor);
 
-    
-    
+  width: 100vw;
+  height: 90vh;
+
+  overflow: hidden;
+  position: relative;
 }
 
-  /* css 10. */
+/* css 10. */
 @keyframes moving {
-    from {
-        transform: translateX(-20vw);
-    }
-    to {
-        transform: translateX(110vw);
-    }
+  from {
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(110vw);
+  }
 }
 .poke {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
+  width: 100px;
+  height: 100px;
 
-      /* css 10. */
-    animation: moving infinite alternate ;
+  position: absolute; /* css 05 */
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+
+  /* css 10. */
+  animation: moving infinite alternate;
 }
 .poke.a {
-    left: 5%;
-    bottom: 5%;
-    background-image: url('../images/poke\ \(1\).png');
+  left: 5%; /* css 05 */
+  bottom: 5%;
+  background-image: url("../images/poke\ \(1\).png");
 
-    animation-duration: 3;  /* css 10. */
+  animation-duration: 3s; /* css 10. */
 }
 .poke.b {
-    left: 10%;
-    bottom: 3%;
-    background-image: url('../images/poke\ \(2\).png');
-    animation-duration: 2s;
+  left: 10%;
+  bottom: 3%;
+  background-image: url("../images/poke\ \(2\).png");
+  animation-duration: 2s;
 }
 .poke.c {
-    left: 7%;
-    bottom: 10%;
-    background-image: url('../images/poke\ \(3\).png');
-    animation-duration: 4s;
+  left: 7%;
+  bottom: 10%;
+  background-image: url("../images/poke\ \(3\).png");
+  animation-duration: 4s;
 }
 .poke.d {
-    left: 17%;
-    bottom: 40%;
-    /* background-image: url('../images/poke\ \(3\).png'); */
-    animation-duration: 4s;
+  left: 17%;
+  bottom: 40%;
+  /* background-image: url('../images/poke\ \(3\).png'); */
+  animation-duration: 4s;
 }
 
 /*  */
-.container{
-    position: relative;    
+.container {
+  position: relative;
 }
 
-.btn-container{
-    background: var(--maincolor);
- 
+.btn-container {
+  background: var(--maincolor);
 }
 
-.title{
-    background: var(--maincolor);
+.title {
+  background: var(--maincolor);
 
-    text-align: center;
+  text-align: center;
 }
 /* 🍀myButton  */
 .myButton {
-
-    /* position: fixed;
+  /* position: fixed;
     top: 100px;
     left: 100px; */
+ 
+  z-index: 2;
 
-    z-index: 2;
+  box-shadow: inset 0px 39px 0px -24px #3b5998;
+  background-color: #3b5998;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
 
-    box-shadow: inset 0px 39px 0px -24px #3b5998;
-    background-color:  #3b5998;
-    border-radius: 4px;
-    border: 1px solid #ffffff;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-  
-    font-size: 15px;
-    padding: 6px 15px;
-    text-decoration: none;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
 
-    display: block;
-    margin: auto;
-   
-  }
-  .myButton:hover {
-    /* background-color:  #3b5998; */
-    opacity: 0.6;
-  }
-  .myButton:active {
-    position: relative;
-    top: 1px;
-  }
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+
+}
+.myButton:hover {
+  /* background-color:  #3b5998; */
+  opacity: 0.6;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
